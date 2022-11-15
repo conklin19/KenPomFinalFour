@@ -3,9 +3,8 @@
 ## Adam Conklin ##
 ## Analyzing KenPom Data for NCAA Final Four Teams ##
 
-import matplotlib as mp
+import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
 import numpy as np
 
 ##Requirement 1.2 Read-In local csv using pandas ###
@@ -58,7 +57,7 @@ print('\n')
 
 ## 2) Median of KP rank of all Final Four teams....should be 5 from Sheets verification ##
 median_rank = FFdata['KPrank'].median()
-print('The median KP rank for all Final Four Teams is)')
+print('The median KP rank for all Final Four Teams is')
 print(median_rank)
 print('\n')
 
@@ -77,6 +76,25 @@ print('\n')
 ## 5) Round KenPom Value of all Final Four teams to 1 decimal place ##
 FFdata = FFdata.round({'KPvalue': 1})
 print(FFdata)
+
+## Requirement 4.1 Make 2 Basic Plots using matplotlib ##
+## Will Plot the Champions by year and KenPom value ##
+
+plt.plot(champions.Year, champions.KPvalue)
+plt.title('NCAA National Champion KenPom Value By Year')
+plt.xlabel('Year')
+plt.xlim(2002, 2022)
+plt.ylabel('KenPom Value')
+plt.show()
+
+plt.plot(champions.Year, champions.KPrank)
+plt.title('NCAA National Champion KenPom Rank by year')
+plt.xlabel('Year')
+plt.ylabel('KenPom Rank')
+plt.show()
+
+
+
 
 
 
