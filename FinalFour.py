@@ -31,17 +31,24 @@ conf_abbrev = {
     "SEC": "Southeastern",
     "WCC": "West Coast",
 }
+print('The Conference dictionary is\n')
 print(conf_abbrev)
 
 
 ## Create a dataframe of only the National Champions (Champion = 1) ##
-champions = FFdata.loc[FFdata['Champion'] == 1]   
-print(champions)
+champions = FFdata.loc[FFdata['Champion'] == 1]  
+print('\n')
+print('The list of champions from 2002-2021 are\n') 
+print(champions) 
 
-## Find the Final Four team with the highest kenpom rating ##
+## Find the Final Four team with the highest kenpom rating ## 
 maxKPvalue = float(FFdata[['KPvalue']].max())
 top_team = FFdata.loc[FFdata['KPvalue'] ==maxKPvalue]
+print('\n\n\n The highest kenpom rated Final Four Team is')
 print(top_team)
+print('\n')
+
+
 
 
 
