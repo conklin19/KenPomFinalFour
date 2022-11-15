@@ -68,6 +68,23 @@ print('The average kenpom rank for all Final Four Teams is')
 print(mean_rank)
 print('\n')
 
+## 4) Mode of KP Rank of all Final Four teams.....should be 1 ##
+mode_rank = float(FFdata['KPrank'].mode())
+print('The mode rank of all Final Four teams is')
+print(mode_rank)
+print('\n')
+
+## 5) Round KenPom Value of all Final Four teams to 1 decimal place ##
+FFdata = FFdata.round({'KPvalue': 1})
+print(FFdata)
+
+
+
+
+
+
+
+
 
 
 
