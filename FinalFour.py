@@ -33,10 +33,14 @@ conf_abbrev = {
 }
 print(conf_abbrev)
 
-champions = data.loc[data['Champion'] == 1]   ## Create a dataframe of only the National Champions ##
 
+## Create a dataframe of only the National Champions (Champion = 1) ##
+champions = FFdata.loc[FFdata['Champion'] == 1]   
 print(champions)
-top_team = data.loc[data['KPvalue'] ==maxKPvalue]
+
+## Find the Final Four team with the highest kenpom rating ##
+maxKPvalue = float(FFdata[['KPvalue']].max())
+top_team = FFdata.loc[FFdata['KPvalue'] ==maxKPvalue]
 print(top_team)
 
 
