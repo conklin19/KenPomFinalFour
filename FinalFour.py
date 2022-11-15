@@ -17,6 +17,7 @@ FFdata = df  #create a copy of the dataframe for testing#
 ###Delete the 4 rows where the 2020 Final Four teams woud have been###
 FFdata = FFdata[FFdata.Year != 2020]  
 
+#Requirement 1.1 create a dictionary ##
 conf_abbrev = {
     "ACC": "Atlantic Coastal",
     "AMR": "American",
@@ -31,6 +32,13 @@ conf_abbrev = {
     "WCC": "West Coast",
 }
 print(conf_abbrev)
+
+champions = data.loc[data['Champion'] == 1]   ## Create a dataframe of only the National Champions ##
+
+print(champions)
+top_team = data.loc[data['KPvalue'] ==maxKPvalue]
+print(top_team)
+
 
 
 
