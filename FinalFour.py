@@ -17,4 +17,20 @@ FFdata = df  #create a copy of the dataframe for testing#
 ###Delete the 4 rows where the 2020 Final Four teams woud have been###
 FFdata = FFdata[FFdata.Year != 2020]  
 
+conf_abbrev = {
+    "ACC": "Atlantic Coastal",
+    "AMR": "American",
+    "B10": "Big 10",
+    "B12": "Big 12",
+    "BGE": "Big East",
+    "COL": "Colonial",
+    "HOR": "Horizon",
+    "MVC": "Missouri Valley",
+    "P12": "Pac 12",
+    "SEC": "Southeastern",
+    "WCC": "West Coast",
+}
+print(conf_abbrev)
+
+
 
