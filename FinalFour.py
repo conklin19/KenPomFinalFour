@@ -48,6 +48,30 @@ print('\n\n\n The highest kenpom rated Final Four Team is')
 print(top_team)
 print('\n')
 
+##Requirement 3.2---- 5 basic Panda Calculations ##
+
+## 1) Sum KP rank of all Final Four Teams.....should be 628 from Sheets verification ##
+sum_rank = FFdata['KPrank'].sum()
+print('The sum of the KenPom rank for all Final Four Teams is\n')
+print(sum_rank)
+print('\n')
+
+## 2) Median of KP rank of all Final Four teams....should be 5 from Sheets verification ##
+median_rank = FFdata['KPrank'].median()
+print('The median KP rank for all Final Four Teams is)')
+print(median_rank)
+print('\n')
+
+## 3) Mean (average) KP rank of all Final Four teams...should be 7.85###
+mean_rank = FFdata['KPrank'].mean()
+print('The average kenpom rank for all Final Four Teams is') 
+print(mean_rank)
+print('\n')
+
+
+
+
+
 
 
 
