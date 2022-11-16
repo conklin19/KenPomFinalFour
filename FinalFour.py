@@ -77,6 +77,14 @@ print('\n')
 FFdata = FFdata.round({'KPvalue': 1})
 print(FFdata)
 
+## 6) Find standard deviation of KenPom rank for Final Four Teams ##
+
+std_rank = float(FFdata['KPrank'].std())
+print('The standard deviation of all Final Four teams is')
+print(std_rank)
+print('\n')
+
+
 ## Requirement 4.1 Make 2 Basic Plots using matplotlib ##
 ## Will Plot the Champions by year and KenPom value ##
 
