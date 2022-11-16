@@ -80,7 +80,7 @@ print(FFdata)
 ## 6) Find standard deviation of KenPom rank for Final Four Teams ##
 
 std_rank = float(FFdata['KPrank'].std())
-print('The standard deviation of all Final Four teams is')
+print('The standard deviation rank of all Final Four teams is')
 print(std_rank)
 print('\n')
 
